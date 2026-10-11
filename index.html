@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HTML Form</h1>
+    <h1>Student Registration Form</h1>
+
+    <form action="submit.php" method="post">
+
+        <fieldset>
+
+            <legend>Personal Information</legend>
+            <div class="personal-info">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+                <br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                <br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="100" placeholder="Enter your age">
+                <br><br>
+
+                <label for="birthday">Date of Birth:</label>
+                <input type="date" id="birthday" name="birthday" placeholder="Enter your date of birth">
+                <br><br>
+                <div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="js" name="skills" value="JavaScript">
+            <label for="js">JavaScript</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Education Information</legend>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="">Select Department</option>
+                <option value="CSE">CSE</option>
+                <option value="SWE">SWE</option>
+                <option value="EEE">EEE</option>
+                <option value="BBA">BBA</option>
+            </select>
+
+            <br><br>
+
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester">
+                <option>1st</option>
+                <option>2nd</option>
+                <option>3rd</option>
+                <option>4th</option>
+                <option>5th</option>
+                <option>6th</option>
+                <option>7th</option>
+                <option>8th</option>
+            </select>
+
+            <br><br>
+            <label for="cgpa">CGPA:</label>
+            <input type="range" id="cgpa" name="cgpa" min="0" max="4" step="0.1"
+                oninput="document.getElementById('value').innerText = this.value">
+
+            <span id="value">2</span>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website">
+            <br><br>
+
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color">
+            <br><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume">
+            <br><br>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time">
+            <br><br>
+
+            <label for="month">Select Month:</label>
+            <input type="month" id="month" name="month">
+            <br><br>
+
+            <label for="week">Select Week:</label>
+            <input type="week" id="week" name="week">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Comments</legend>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40"
+                placeholder="Enter your comments here..."></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <input type="hidden" name="userid" value="1001">
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+
+</html>
